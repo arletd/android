@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.bd.mannequincollection.Modelos">
+
+    <LinearLayout
+        android:background="@drawable/models"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:weightSum="1"
+        >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:background="#909BE289"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Volver"
+                android:textSize="15dp"
+                android:textColor="#151515"
+                android:layout_marginBottom="120dp"
+                android:id="@+id/btVolver"
+                android:layout_gravity="left"
+                android:onClick="regresar"/>
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Opciones"
+                android:layout_gravity="center"
+                android:background="#909BE289"
+                android:textSize="40sp"
+                android:width="350sp"
+                android:textColor="#1C1C1C"
+                android:textAlignment="center"
+                android:layout_margin="5dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/listaModelos"
+                android:text="Lista de modelos"
+                android:layout_gravity="center"
+                android:background="#95BEF781"
+                android:textColor="#151515"
+                android:textSize="30sp"
+                android:width="350sp"
+                android:height="50dp"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:layout_margin="5dp"
+                android:clickable="true"
+                android:onClick="listaModelos"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/agregarModelo"
+                android:text="Agregar modelo"
+                android:layout_gravity="center"
+                android:background="#95BEF781"
+                android:textSize="30sp"
+                android:width="350sp"
+                android:textColor="#151515"
+                android:height="50dp"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:layout_margin="5dp"
+                android:clickable="true"
+                android:onClick="agregaModelo"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/editarModelo"
+                android:text="Editar modelo"
+                android:layout_gravity="center"
+                android:background="#95BEF781"
+                android:textSize="30sp"
+                android:width="350sp"
+                android:height="50dp"
+                android:textColor="#151515"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:layout_margin="5dp"
+                android:clickable="true"
+                android:onClick="editarModelo"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/buscarModelo"
+                android:text="Buscar"
+                android:layout_gravity="center"
+                android:background="#95BEF781"
+                android:textSize="30sp"
+                android:textColor="#151515"
+                android:width="350sp"
+                android:height="50dp"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:layout_margin="5dp"
+                android:clickable="true"
+                android:onClick="buscarModelo"/>
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
+

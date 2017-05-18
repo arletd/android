@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.bd.mannequincollection.ListaDeModelos">
+
+    <LinearLayout
+        android:background="@drawable/varias"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:textColor="#151515"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Modelos"
+                android:textSize="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"/>
+
+            <ListView
+                android:id="@+id/listaModelos"
+                android:background="#70E6E6E6"
+                android:textColor="#151515"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btVolver"
+        android:background="#BEF781"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="280dp"
+        android:layout_marginTop="10dp"
+        android:text="Volver"
+        android:textSize="15dp"
+        android:textColor="#585858"
+        android:layout_gravity="right"
+        android:onClick="regresar"/>
+
+</RelativeLayout>

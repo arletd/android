@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.bd.mannequincollection.AgregaModelo">
+
+    <LinearLayout
+        android:background="@drawable/editorials"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:weightSum="1">
+
+            <Button
+                android:id="@+id/btVolver"
+                android:background="#88BEF781"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Volver"
+                android:textSize="15dp"
+                android:textColor="#151515"
+                android:layout_gravity="left"
+                android:onClick="regresar"/>
+
+            <TextView
+                android:background="#90E6E6E6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nombre:"
+                android:textSize="25dp"
+                android:textColor="#151515"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"/>
+
+            <EditText
+                android:id="@+id/registraNombre"
+                android:background="#90E6E6E6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#151515"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+
+            <TextView
+                android:background="#90E6E6E6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#151515"
+                android:text="Edad:"
+                android:textSize="25dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+
+            <Spinner
+                android:id="@+id/registraEdad"
+                android:layout_marginTop="10dp"
+                android:background="#90E6E6E6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:layout_marginBottom="30dp"
+                android:entries="@array/spinnerEdad"
+                android:textAlignment="textEnd"
+                android:textColor="#151515"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+
+            <TextView
+                android:background="#90E6E6E6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#151515"
+                android:text="País de origen:"
+                android:textSize="25dp"
+                android:layout_marginLeft="20dp"/>
+
+            <Spinner
+                android:id="@+id/registraNacionalidad"
+                android:layout_marginTop="10dp"
+                android:background="#90E6E6E6"
+                android:layout_width="match_parent"
+                android:textColor="#151515"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:layout_marginBottom="30dp"
+                android:entries="@array/spinnerPais"
+                android:textAlignment="textEnd"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+
+            <Button
+                android:id="@+id/btAgregarModelo"
+                android:background="#80BEF781"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="#151515"
+                android:layout_marginLeft="80dp"
+                android:layout_marginRight="80dp"
+                android:layout_marginBottom="10dp"
+                android:text="Agregar"
+                android:textSize="25dp"
+                android:layout_gravity="center"
+                android:onClick="agregar"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.bd.mannequincollection.BuscaModelo">
+
+    <LinearLayout
+        android:background="@drawable/korea"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1">
+
+            <Button
+                android:id="@+id/btVolver"
+                android:background="#90BEF781"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Volver"
+                android:textColor="#151515"
+                android:textSize="15dp"
+                android:layout_gravity="left"
+                android:onClick="regresar"/>
+
+            <TextView
+                android:background="#90E6E6E6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Busca por nombre:"
+                android:textSize="25dp"
+                android:textColor="#151515"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"/>
+
+            <EditText
+                android:id="@+id/buscaNombre"
+                android:background="#90E6E6E6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:textColor="#151515"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+
+
+            <Button
+                android:id="@+id/btBuscaModelo"
+                android:background="#90BEF781"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="80dp"
+                android:layout_marginRight="80dp"
+                android:layout_marginBottom="10dp"
+                android:text="Buscar"
+                android:textSize="25dp"
+                android:textColor="#151515"
+                android:layout_gravity="center"/>
+
+            <RelativeLayout
+                android:id="@+id/fragmentoBuscar"
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                >
+
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
